@@ -1,10 +1,11 @@
 "A Singleton Dictionary of Reported Events"
 import time
+from typing import Dict, Tuple
 
 
 class Reports():
     "A Singleton Dictionary of Reported Events"
-    _reports: dict[int, tuple[float, str]] = {}  # Python 3.9
+    _reports: Dict[int, Tuple[float, str]] = {}  # Python 3.9
     # _reports = {}  # Python 3.8 or earlier
     _row_id = 0
 

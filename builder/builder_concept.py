@@ -62,9 +62,7 @@ class Director:
     @staticmethod
     def construct():
         "Constructs and returns the final product"
-        return Builder()\
-            .build_part_a()\
-            .build_part_b()\
+        return Builder().build_part_a().build_part_b()\
             .build_part_c()\
             .get_result()
 

@@ -1,6 +1,8 @@
 "The Game Engine"
 import time
 from decimal import Decimal
+from typing import List, Tuple
+
 from wallets import Wallets
 from reports import Reports
 
@@ -10,7 +12,7 @@ class GameEngine():
     _instance = None
     _start_time: int = 0
     _clock: int = 0
-    _entries: list[tuple[str, Decimal]] = []  # Python 3.9
+    _entries: List[Tuple[str, Decimal]] = []  # Python 3.9
     # _entries = []  # Python 3.8 or earlier
     _game_open = True
 

@@ -1,5 +1,7 @@
 "The Game API facade"
 from decimal import Decimal
+from typing import Dict
+
 from users import Users
 from wallets import Wallets
 from game_engine import GameEngine
@@ -34,7 +36,7 @@ class GameAPI():
         return GameEngine().submit_entry(user_id, entry)
 
     @staticmethod
-    def register_user(value: dict[str, str]) -> str:  # Python 3.9
+    def register_user(value: Dict[str, str]) -> str:  # Python 3.9
         # def register_user(value) -> str:  # Python 3.8 and earlier
         "register a new user and returns the new id"
         return Users.register_user(value)
